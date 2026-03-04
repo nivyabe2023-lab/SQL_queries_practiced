@@ -1,0 +1,1 @@
+alter table customer change column customer_address address varchar(200)

@@ -1,0 +1,1 @@
+select count(name),department from list group by department order by count(name) desc

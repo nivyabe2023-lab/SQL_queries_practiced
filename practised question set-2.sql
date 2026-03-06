@@ -1,0 +1,33 @@
+alter table students modify  finalgrade varchar(100);
+INSERT INTO students(id,Name,age,finalgrade)
+VALUES
+(101,'Jhon doe',20,'A'),
+(102,'Jane Smith',22,'B'),
+(103,'Bob Johnson',19,'C'),
+(104,'Alice Brown',21,'A'),
+(105,'Charlie Davis',20,'B'),
+(106,'Emma Wilson',23,'A'),
+(107,'Micheal Lee',20,'C'),
+(108,'Ooliviya Moore',19,'B'),
+(109,'William Turmur',21,'A'),
+(110,'Sophia Roudigerz',22,'C');
+select *from students;
+ALTER TABLE students
+ADD PRIMARY KEY (id);
+TRUNCATE TABLE students;
+INSERT INTO students(id,Name,age,finalgrade)
+VALUES
+(101,'Jhon doe',20,'A'),
+(102,'Jane Smith',22,'B'),
+(103,'Bob Johnson',19,'C'),
+(104,'Alice Brown',21,'A'),
+(105,'Charlie Davis',20,'B'),
+(106,'Emma Wilson',23,'A'),
+(107,'Micheal Lee',20,'C'),
+(108,'Ooliviya Moore',19,'B'),
+(109,'William Turmur',21,'A'),
+(110,'Sophia Roudigerz',22,'C');
+ALTER TABLE students
+ADD PRIMARY KEY (id);
+update students set age = 21 where id = 101;
+delete from students where id = 101
